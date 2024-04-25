@@ -9,16 +9,31 @@
 </head>
 <script>
     // 링크 클릭 시 스크롤 이동
-    function scrollToSection(sectionId) {
-        var targetSection = document.getElementById(sectionId);
-        if (targetSection) {
-            var topOffset = targetSection.offsetTop;
-            window.scrollTo({
-                top: topOffset,
-                behavior: 'smooth'
-            });
-        }
-    }
+    // function scrollToSection(sectionId) {
+    //     var targetSection = document.getElementById(sectionId);
+    //     if (targetSection) {
+    //         var topOffset = targetSection.offsetTop;
+    //         var windowHeight = window.innerHeight;
+    //         var scrollY = window.scrollY;
+    //         var sectionHeight = targetSection.offsetHeight;
+
+    //         // 섹션의 위치가 현재 스크롤 위치보다 위에 있는 경우
+    //         if (topOffset < scrollY) {
+    //             window.scrollTo({
+    //                 top: topOffset,
+    //                 behavior: 'smooth'
+    //             });
+    //         } 
+    //         // 섹션의 위치가 현재 스크롤 위치보다 아래에 있는 경우
+    //         else if (topOffset > scrollY + windowHeight - sectionHeight) {
+    //             // 화면의 맨 위에서부터 섹션의 높이만큼 빼서 스크롤
+    //             window.scrollTo({
+    //                 top: topOffset - windowHeight + sectionHeight,
+    //                 behavior: 'smooth'
+    //             });
+    //         }
+    //     }
+    // }
 </script>
 <body>
     <div class="wrap">
@@ -30,8 +45,9 @@
                     </div>
                     <p class="nick">오승호</p>
                 </div>
+                <!-- 메뉴 -->
                 <div class="nav">
-                    <p><a href="#" class="back pa1" id="java" onclick="scrollToSection('java')">JAVA 백엔드 개발자</a></p>
+                    <p><a href="#" class="back pa1" id="java">JAVA 백엔드 개발자</a></p>
                     <p><a href="#" class="alink pa" id="Home" onclick="scrollToSection('home')" >Home</a></p>
                     <p><a href="#" class="alink pa" id="about" onclick="scrollToSection('about')">About</a></p>
                     <p><a href="#" class="alink pa" id="skills" onclick="scrollToSection('skills')">Skills</a></p>
@@ -41,16 +57,65 @@
                 </div>
             </div>
             <div class="wrapright">
-                <div class="backright1">
-                    <div>
-                        <h1>안녕하세요</h1>
+                <!-- 인사 -->
+                <div id="home" class="backright1">
+                    <div class="home">
+                        <h1>안녕하세요<br>
+                            반갑습니다!<br>
+                            저는<br>
+                            오승호입니다
+                        </h1>
                     </div>
                 </div>
-                <div class="backright2"></div>
-                <div class="backright3"></div>
-                <div class="backright4"></div>
-                <div class="backright5"></div>
-                <div class="backright6"></div>
+                <!-- 자기소개 -->
+                <div id="about" class="backright2">
+                    <div class="aboutbox">
+                        <p class="shot">about me</p>
+                        <p>"자기소개"</p>
+                    </div>
+                </div>
+                <!-- 스킬 -->
+                <div id="skills" class="backright3">
+                    <div class="skilsbox">
+                        <p class="shot">skills</p>
+                        <div class="skillsDiv">
+                            <div>스킬1</div>
+                            <div>스킬2</div>
+                            <div>스킬3</div>
+                            <div>스킬4</div>
+                            <div>스킬5</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 프로젝트 -->
+                <div id="projects" class="backright4">
+                    <div class="projectsbox">
+                        <p class="shot">projects</p>
+                        <!-- kbo프로젝트 -->
+                        <div class="kbo">
+                            <p class="proFont">kbo 야구 프로젝트</p>
+                        </div>
+                        <!-- 영화 프로젝트 -->
+                        <div class="movie">
+                            <p class="proFont">영화 예약 프로젝트</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- git -->
+                <div id="git" class="backright5">
+                    <div class="gitbox">
+                        <p class="shot">git</p>
+                        <p><a href="#">git주소</a></p>
+                    </div>
+                </div>
+                <!-- 이메일 -->
+                <div id="email" class="backright6">
+                    <div class="emailbox">
+                        <p class="shot">email</p>
+                        <p>이메일주소</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

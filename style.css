@@ -9,6 +9,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+h1 {
+    font-size: 42px;
+}
 /* 전체 시작 */
 .wrap {
     margin: 0 auto;
@@ -23,11 +26,12 @@ a {
 }
 .wrapleft {
     position: fixed;
-    width: 15%;
+    width: 300px;
     height: 100vh;
     background-color: aliceblue;
     text-align: center;
     overflow-y: auto;
+    left: 10%;
 }
 .imgDiv {
     width: 100%;
@@ -68,24 +72,87 @@ a {
 .wrapright {
     width: 85%;
     height: 100vh;
-    background-color: black;
-    margin-left: 24%;
+    margin-left: 19%;
 }
+/* wrapright 통일 */
+.shot {
+    font-size: 36px;
+    font-weight: bold;
+}
+/* 인사 시작 */
 .backright1 {
     width: 100%;
     height: 100%;
-    background-color: aqua;
     
 }
+.home {
+    position: relative;
+    top: 250px;
+    /* left: 100px; */
+    padding-left: 100px;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    line-height: 50px;
+}
+/* 자기소개 시작 */
 .backright2 {
     width: 100%;
     height: 100%;
-    background-color: rgb(53, 214, 47);
+    /* background-color: rgb(53, 214, 47); */
     
 }
+.aboutbox {
+    padding-left: 50px;
+}
+
+/* 스킬 시작 */
 .backright3 {
     width: 100%;
     height: 100%;
-    background-color: rgb(224, 148, 48);
+    /* background-color: rgb(224, 148, 48); */
     
+}
+.skilsbox {
+    padding-left: 50px;
+}
+.skillsDiv {
+    margin-top: 50px;
+    display: flex;
+}
+.skillsDiv>div {
+    width: 20%;
+}
+/* 프로젝트 시작 */
+.backright4 {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(224, 148, 48); */
+    
+}
+.projectsbox {
+    padding-left: 50px;
+}
+.proFont {
+    font-size: 24px;
+}
+/* git 시작 */
+.backright5 {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(224, 148, 48); */
+    
+}
+.gitbox {
+    padding-left: 50px;
+}
+/* 이메일 시작 */
+.backright6 {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(224, 148, 48); */
+    
+}
+.emailbox {
+    padding-left: 50px;
 }
